@@ -1,0 +1,29 @@
+{
+  "name": "animeonterminal",
+  "version": "0.1.0",
+  "description": "Print anime character portraits in the terminal.",
+  "type": "module",
+  "bin": {
+    "animeonterminal": "./bin/animeonterminal.js"
+  },
+  "scripts": {
+    "start": "node ./bin/animeonterminal.js",
+    "check": "node --check ./bin/animeonterminal.js && node --check ./src/cli.js && node --check ./src/providers.js && node --check ./src/render.js && node --check ./src/cache.js && node --check ./src/images.js && node --check ./scripts/evaluate.js",
+    "evaluate": "node ./scripts/evaluate.js"
+  },
+  "keywords": [
+    "anime",
+    "terminal",
+    "ansi",
+    "ascii-art",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "sharp": "^0.34.3"
+  }
+}
